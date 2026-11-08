@@ -1,0 +1,53 @@
+:root {
+  --screen: #143400;
+  --panel: #1e5a19;
+  --panel-edge: #27701f;
+  --yellow: #ffe100;
+  --text: #e6f5be;
+  --leaf: #73c43c;
+}
+* { box-sizing: border-box; }
+html { background: var(--screen); }
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at top, #2a5a12 0%, var(--screen) 60%);
+  color: var(--text);
+  font: 17px/1.55 "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+header { text-align: center; margin-bottom: 24px; }
+header img { width: 112px; height: 112px; border-radius: 24px; box-shadow: 0 6px 18px rgb(0 0 0 / 0.4); }
+h1 {
+  color: var(--yellow);
+  font-weight: 900;
+  font-size: 2.3rem;
+  margin: 14px 0 4px;
+  text-shadow: 2px 2px 0 rgb(0 0 0 / 0.55);
+}
+.tagline { margin: 0; color: var(--leaf); font-weight: 700; }
+nav { margin-top: 14px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+nav a {
+  color: var(--yellow);
+  font-weight: 800;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--panel);
+  border: 1px solid var(--panel-edge);
+}
+nav a[aria-current="page"] { background: var(--panel-edge); }
+section {
+  background: rgb(30 90 25 / 0.55);
+  border: 1px solid rgb(115 196 60 / 0.25);
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin: 16px 0;
+}
+h2 { color: var(--yellow); font-weight: 900; font-size: 1.3rem; margin: 0 0 8px; }
+p, li { margin: 8px 0; }
+ul { padding-left: 1.2em; }
+strong { color: #fff; }
+a { color: var(--yellow); }
+.muted { color: var(--leaf); font-size: 0.95rem; }
+footer { text-align: center; color: var(--leaf); font-size: 0.9rem; margin-top: 28px; }
